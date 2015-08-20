@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  devise_for :users
   match "/index"=> "b_core#index", via: :get
 
   match "/players"=> "b_core#pl", via: :get
