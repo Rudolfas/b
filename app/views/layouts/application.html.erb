@@ -11,12 +11,18 @@
  <body id="containerr">
 
     <div id="container"> 
-    <%= render 'layouts/navigation'%>
+   
 
       
 
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
+
+      <% if user_signed_in? %>
+        <%= render 'layouts/logednavigation'%>
+      <% else %>
+        <%= render 'layouts/navigation'%>
+      <% end %>
 
       
       <section class="sidebar" id="right">
