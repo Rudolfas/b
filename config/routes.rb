@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
 
 
+  
+  match "/wall"=> "b_loged#wall", via: :get
+  match "/player"=> "b_loged#player", via: :get
+  match "/investor"=> "b_loged#investor", via: :get
+  match "/my_account"=> "b_loged#my_account", via: :get
+  match "/cashier"=> "b_loged#cashier", via: :get
+  match "/support"=> "b_loged#support", via: :get
+  match "/events"=> "b_loged#events", via: :get
+
   devise_for :users
   match "/index"=> "b_core#index", via: :get
 
