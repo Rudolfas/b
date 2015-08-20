@@ -1,0 +1,2 @@
+module BCoreHelper
+end
