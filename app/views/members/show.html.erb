@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @member.name %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @member.surname %>
+</p>
+
+<p>
+  <strong>Nick:</strong>
+  <%= @member.nick %>
+</p>
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %> |
+<%= link_to 'Upload money', new_cash_path(member_id: @member) %> 

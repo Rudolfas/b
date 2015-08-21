@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
 
   
+  resources :members
+  resources :cashes
   match "/wall"=> "b_loged#wall", via: :get
   match "/player"=> "b_loged#player", via: :get
   match "/investor"=> "b_loged#investor", via: :get
